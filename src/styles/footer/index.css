@@ -1,0 +1,40 @@
+footer {
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.5rem;
+    background: #FFCAD4;
+    min-height: 96px;
+    display: flex;
+    align-items: center;
+}
+
+#footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.footer-container__social-icon {
+    width: 56px;
+	height: 56px;
+}
+
+.footer-container__social-icon--github {
+    background: center / contain no-repeat url("../../icons/github.png");
+}
+
+.footer-container__social-icon--linkedn {
+    background: center / contain no-repeat url("../../icons/linkedn.png");
+}
+
+.footer-container__social-icon--twitter {
+    background: center / contain no-repeat url("../../icons/twitter.png");
+}
+
+@media(max-width:696px) {
+    #footer-container {
+        
+        justify-content: space-between;
+        
+    }
+}

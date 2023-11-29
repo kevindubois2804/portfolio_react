@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./component/layout/layout";
+
+
+import { AppearFromTopChildrenElementsAnimation } from "./scripts/functions";
+import { useRef } from "react";
 
 function App() {
+  const containerInfoRef = useRef();
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <div className="presentation-container">
+        <div className="presentation-container__info" ref={containerInfoRef}>
+            <p>Hello,</p>
+            <p>Je suis <span>Kévin</span></p>
+            <p>Développeur web et web mobile débutant</p>
+            <a href="#">
+                <button className="presentation-container__contact-button">Contact</button>
+            </a>
+        </div>
+        <div className="presentation-container__image"></div>
+      </div>
+    </Layout>
+    
   );
 }
+
 
 export default App;

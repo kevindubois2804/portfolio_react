@@ -1,0 +1,8 @@
+@import url("./body/");
+@import url("./header/");
+@import url("./footer/");
+@import url("./accueil/");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
